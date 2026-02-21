@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SignUpButtonWrapper } from "@/components/sign-up-button";
 
 export default async function Home() {
   const { userId } = await auth();
@@ -28,9 +29,7 @@ export default async function Home() {
           Create short, memorable links in seconds. Track clicks, analyze traffic, and optimize your marketing campaigns with powerful analytics.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
-          <Button asChild size="lg" className="text-base">
-            <Link href="/dashboard">Get Started Free</Link>
-          </Button>
+          <SignUpButtonWrapper />
           <Button asChild variant="outline" size="lg" className="text-base">
             <Link href="#features">Learn More</Link>
           </Button>
@@ -164,9 +163,7 @@ export default async function Home() {
           <p className="mb-8 text-lg text-muted-foreground">
             Join thousands of users who trust us with their links. Start creating short links today.
           </p>
-          <Button asChild size="lg" className="text-base">
-            <Link href="/dashboard">Start Shortening Links</Link>
-          </Button>
+          <SignUpButtonWrapper />
         </div>
       </section>
     </div>
