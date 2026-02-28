@@ -1,3 +1,7 @@
+---
+description: Always read these instructions before implementing any authentication-related features. This file outlines the strict guidelines for using Clerk as the sole authentication provider in this application.
+---
+
 # Authentication Guidelines
 
 ## Overview
